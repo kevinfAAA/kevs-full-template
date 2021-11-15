@@ -9,15 +9,15 @@ html, body{
   top: 0;
   left: 0;
 }
-a {
+.nav-item a{
   text-decoration: none;
   color: rgba(34,54,69,.7);
   font-weight: 500;
 }
-a:hover {
+.nav-item a:hover {
   color: #e74c3c;
 }
-ul {
+.nav-item ul {
   list-style-type: none;
 }
 .navbar {
@@ -59,6 +59,7 @@ ul {
   margin-left: 10px;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
+  background-color: white;
   padding: 2rem 1.2rem;
   font-size: 1.4rem;
   position: relative;
@@ -67,6 +68,7 @@ ul {
   border-top: 4px solid #e74c3c;
 }
 .navbar-expand-lg .navbar-nav .nav-link:active{
+  background-color: white;
   border-top: 4px solid #e74c3c;
   color: #e74c3c;
 }
@@ -83,4 +85,59 @@ ul {
 }
 .navbar-nav .btn:hover {
   background-color: #0a3d62;
+}
+
+/* Image*/
+
+.callout-container {
+  height: 100vh;
+  font-size: 20px;
+  background: url('../images/restaurant-background.jpg') no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.opaque-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  background-color: transparent;
+}
+
+.jumbotron h1 {
+  font-size: 50px;
+  color: rgba(34,54,69,.7);;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.jumbotron .lead {
+  font-size: 40px;
+  color: rgba(34,54,69,.7);
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 400px) {
+
+  .jumbotron h1 {
+    font-size: 30px;
+  }
+
+  .jumbotron .lead {
+    font-size: 25px;
+  }
 }
